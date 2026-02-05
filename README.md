@@ -33,29 +33,29 @@ This creates a natural back-and-forth learning experience where you control the 
 ## Quick Start
 
 1. **Clone this repository**
-2. **Navigate to a course folder** (e.g., `3k` for Calculus 3)
-3. **Check if setup files exist:**
-   - If `setup.ps1`/`setup.sh` and `pyproject.toml` exist, run the setup script
-   - Otherwise, copy from `RenameFolderAndRunSetup/` template
-4. **Run setup:** `.\setup.ps1` (Windows) or `./setup.sh` (Linux/Mac)
-5. **Reload VS Code** and select the kernel
+2. **Copy the AUTO_JUPYTER_IN_VS_CODE Create a course folder** 
+3. **Run setup:**
+   - Edit `example.pyproject.toml` - remove # to add packages or add # to remove packages.
+   - Rename it to `pyproject.toml`
+   -  `.\setup.ps1` (Windows) or `./setup.sh` (Linux/Mac)
+4. In the folde create a file. yoursubject.ipynb
+5. **Reload VS Code** and select the kernel inside the notebook
 6. **Start asking Claude questions** in your notebook
-
-See individual folder READMEs for detailed setup instructions.
+7. **change .claude/Instructions.md to change Claudes behaviour
 
 ## Project Structure
 
 ```
 .
-├── .claude/               # AI assistant configuration
-│   └── instructions.md    # How Claude should interact with notebooks
-├── 3k/                    # Calculus 3 (Matte 3000) notebooks
-├── RenameFolderAndRunSetup/  # Template for new course folders
-│   ├── setup.ps1          # Windows setup script
-│   ├── setup.sh           # Linux/Mac setup script
-│   ├── pyproject.toml     # Base project config
+├── .claude/                    # AI assistant configuration
+│   └── instructions.md         # How Claude should interact with notebooks
+├── 3k/                         # Calculus 3 (Matte 3000) notebook example
+├── RenameFolderAndRunSetup/    # Template for creating new course folders
+│   ├── setup.ps1               # Windows setup script (creates a .venv in the folder and makes it reachable for jupyter in vs code.)
+│   ├── setup.sh                # Linux/Mac setup script
+│   ├── pyproject.toml          # Base project config
 │   └── example.pyproject.toml  # Annotated package reference
-└── missing_packages.md    # Track missing dependencies
+└── missing_packages.md         # Track missing dependencies
 ```
 
 ## Contributing & Reporting Issues
