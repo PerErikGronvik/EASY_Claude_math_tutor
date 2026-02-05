@@ -1,3 +1,9 @@
+# Recuirements
+- Python 3.10+
+- Jupyter Notebook
+- VS Code with Python and Jupyter extensions
+- `uv` package manager (install with `pip install uv`) (setup file helps you with this, it will propmt you to install it if you don't have it)
+
 # Mathematical Concept Notebooks
 
 Interactive Jupyter notebooks for university-level mathematics courses (Calculus 1-4, Statistics, AI, Data Science) designed to work with Claude AI as a coding assistant.
