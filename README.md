@@ -6,11 +6,11 @@
 
 # Mathematical Concept Notebooks
 
-Interactive Jupyter notebooks for university-level mathematics courses (Calculus 1-4, Statistics, AI, Data Science) designed to work with Claude AI as a coding assistant.
+Interactive Jupyter notebooks for university-level mathematics courses (Calculus 1-4, Statistics, AI, Data Science) designed to work with GitHub Copilot in VS Code. We recommend using Claude Sonnet 4.5 or newer as your Copilot model for the best experience. For free ones, I think GPT 4.1 is the best as of 09.02.2026.
 
 ## What This Is
 
-This project provides a structured environment for learning mathematics through code with AI assistance. Claude is configured to:
+This project provides a structured environment for learning mathematics through code with AI assistance. GitHub Copilot is configured to:
 - Explain mathematical concepts step-by-step
 - Create interactive visualizations
 - Guide you through problem-solving at your own pace
@@ -18,11 +18,11 @@ This project provides a structured environment for learning mathematics through 
 
 ## Example Usage
 
-Open a notebook (e.g., `3k/3d_lagrange_ellipse_problems.ipynb`) and ask Claude questions like:
+Open a notebook (e.g., `3k/3d_lagrange_ellipse_problems.ipynb`) and ask Copilot questions like:
 
 **You:** "What is a partial derivative and how do I visualize it?"
 
-**Claude will:**
+**Copilot will:**
 1. Add your question as a markdown cell
 2. Explain the concept clearly
 3. Create code demonstrations with plots
@@ -40,15 +40,15 @@ This creates a natural back-and-forth learning experience where you control the 
    -  `.\setup.ps1` (Windows) or `./setup.sh` (Linux/Mac)
 4. In the folde create a file. yoursubject.ipynb
 5. **Reload VS Code** and select the kernel inside the notebook
-6. **Start asking Claude questions** in your notebook
-7. **change .github/copilot-instructions.md to change Claudes behaviour
+6. **Start asking Copilot questions** in your notebook
+7. **change .github/copilot-instructions.md to change Copilot's behaviour
 
 ## Project Structure
 
 ```
 .
 ├── .github/                    # AI assistant configuration
-│   └── copilot-instructions.md # How Claude should interact with notebooks
+│   └── copilot-instructions.md # How Copilot should interact with notebooks
 ├── 3k/                         # Calculus 3 (Matte 3000) notebook example
 ├── RenameFolderAndRunSetup/    # Template for creating new course folders
 │   ├── setup.ps1               # Windows setup script (creates a .venv in the folder and makes it reachable for jupyter in vs code.)
