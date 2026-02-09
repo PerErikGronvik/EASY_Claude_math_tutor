@@ -41,14 +41,14 @@ This creates a natural back-and-forth learning experience where you control the 
 4. In the folde create a file. yoursubject.ipynb
 5. **Reload VS Code** and select the kernel inside the notebook
 6. **Start asking Claude questions** in your notebook
-7. **change .claude/Instructions.md to change Claudes behaviour
+7. **change .github/copilot-instructions.md to change Claudes behaviour
 
 ## Project Structure
 
 ```
 .
-├── .claude/                    # AI assistant configuration
-│   └── instructions.md         # How Claude should interact with notebooks
+├── .github/                    # AI assistant configuration
+│   └── copilot-instructions.md # How Claude should interact with notebooks
 ├── 3k/                         # Calculus 3 (Matte 3000) notebook example
 ├── RenameFolderAndRunSetup/    # Template for creating new course folders
 │   ├── setup.ps1               # Windows setup script (creates a .venv in the folder and makes it reachable for jupyter in vs code.)

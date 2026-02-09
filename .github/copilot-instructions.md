@@ -35,13 +35,12 @@ When a user asks a question about a mathematical concept:
 4. **Interactive learning:** Wait for the user to ask follow-up questions rather than assuming what they want next
 
 **Structure:**
-```
-[Markdown Cell] - User's question/prompt
-[Markdown Cell] - Explanation of concept
-[Code Cell] - Code demonstration
-[Markdown Cell] - Interpretation of results
-[Code Cell] - Additional example if needed
-```
+- Cell 1 (Code): Import statements (update and rerun if new packages are needed)
+** Answering the user **
+- Cell 2 (Markdown): User's question/prompt
+- Cell 3 (Markdown): Explanation of concept
+- Cell 4 (Code): Code demonstration, visualization, or example
+- Cell 5 (Markdown): Interpretation of results
 
 ### 3. Stay Focused
 
@@ -49,57 +48,14 @@ When a user asks a question about a mathematical concept:
 - Answer the specific question asked
 - Provide clear, concise explanations
 - Show working code examples
-- Wait for user to guide the conversation
+- Have patience and wait for follow-up questions
 
 **DON'T:**
-- Continue to full solutions unprompted
-- Assume the user wants to know related concepts
-- Over-explain beyond the question
-- Jump ahead in the learning process
+- Answer the exercise unless specifically asked to
+- Continue to full solutions unless asked
+- Assume the user wants related concepts explained
+- Over-explain beyond the immediate question
 
-This is a **back-and-forth learning exercise** where the student drives the pace and direction.
+## Key Reminder
 
-## Example Interaction
-
-**User asks:** "What is a partial derivative?"
-
-**Response:**
-[Cell 1 -imports]
-```python 
-import numpy as np
-```
-
-```markdown
-[Cell 2 - Markdown]
-## What is a partial derivative?
-```
-
-```markdown
-[Cell 3 - Markdown]
-A partial derivative measures how a multivariable function changes 
-when we vary only one variable while keeping others constant.
-```
-
-```python
-[Cell 1 - Update into code cell]
-import sympy as sp
-** rerun cell 1 to include sp **
-```
-
-```python
-[Cell 3 - Code]
-x, y = sp.symbols('x y')
-f = x**2 + 3*x*y + y**2
-
-# Partial derivative with respect to x
-df_dx = sp.diff(f, x)
-df_dx
-```
-
-```markdown
-[Cell 4 - Markdown]
-The partial derivative ∂f/∂x = 2x + 3y shows how f changes 
-as x changes (treating y as constant).
-```
-
-**STOP HERE** - Wait for user's next question rather than continuing to explain ∂f/∂y or applications.
+**MOST IMPORTANT:** When new packages are needed, always add imports to the top cell and rerun it. Never create separate import cells throughout the notebook.

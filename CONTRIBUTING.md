@@ -45,7 +45,7 @@ For questions or discussions, open an Issue on GitHub or reach out to **PerErikG
 ## Guidelines
 
 - Keep notebooks focused on one concept at a time
-- Follow the Claude interaction guidelines in `.claude/instructions.md`
+- Follow the Claude interaction guidelines in `.github/copilot-instructions.md`
 - Test setup scripts before submitting
 - Update `example.pyproject.toml` when adding new package categories
 - Write clear commit messages
